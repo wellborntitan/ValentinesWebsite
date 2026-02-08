@@ -52,6 +52,9 @@ const button = document.getElementById("valentinesButton");
 
 button.addEventListener("click", () => {
   button.textContent = "I love you too! 💕";
+  setTimeout(() => {
+    window.location.href = "valentine-repo/index.html";
+  }, 500);
 });
 
 function drawTextWithLineBreaks(lines, x, y, fontSize, lineHeight) {
