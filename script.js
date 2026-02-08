@@ -73,23 +73,23 @@ function drawText() {
     context.shadowOffsetX = 0;
     context.shadowOffsetY = 0;
 
-    if(frameNumber < 250){
+    if(frameNumber < 190){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
         context.fillText("everyday day I cannot believe how lucky I am", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     //fades out the text by decreasing the opacity
-    if(frameNumber >= 250 && frameNumber < 500){
+    if(frameNumber >= 190 && frameNumber < 440){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
         context.fillText("everyday day I cannot believe how lucky I am", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
     //needs this if statement to reset the opacity before next statement on canvas
-    if(frameNumber == 500){
+    if(frameNumber == 440){
         opacity = 0;
     }
-    if(frameNumber > 500 && frameNumber < 750){
+    if(frameNumber > 440 && frameNumber < 690){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
 
         if (window.innerWidth < 600) {           //shortens long sentence for mobile screens
@@ -100,7 +100,7 @@ function drawText() {
 
         opacity = opacity + 0.01;
     }
-    if(frameNumber >= 750 && frameNumber < 1000){
+    if(frameNumber >= 690 && frameNumber < 940){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
         
         if (window.innerWidth < 600) {
@@ -112,38 +112,38 @@ function drawText() {
         opacity = opacity - 0.01;
     }
 
-    if(frameNumber == 1000){
+    if(frameNumber == 940){
         opacity = 0;
     }
-    if(frameNumber > 1000 && frameNumber < 1250){
+    if(frameNumber > 940 && frameNumber < 1190){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
         context.fillText("to be alive, and to get to spend this life with you", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
-    if(frameNumber >= 1250 && frameNumber < 1500){
+    if(frameNumber >= 1190 && frameNumber < 1440){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
         context.fillText("to be alive, and to get to spend this life with you", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
-    if(frameNumber == 1500){
+    if(frameNumber == 1440){
         opacity = 0;
     }
-    if(frameNumber > 1500 && frameNumber < 1750){
+    if(frameNumber > 1440 && frameNumber < 1690){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
         context.fillText("is so incredibly, unfathomably unlikely", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
-    if(frameNumber >= 1750 && frameNumber < 2000){
+    if(frameNumber >= 1690 && frameNumber < 1940){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
         context.fillText("is so incredibly, unfathomably unlikely", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
-    if(frameNumber == 2000){
+    if(frameNumber == 1940){
         opacity = 0;
     }
-    if(frameNumber > 2000 && frameNumber < 2250){
+    if(frameNumber > 1940 && frameNumber < 2190){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
 
         if (window.innerWidth < 600) {
@@ -154,7 +154,7 @@ function drawText() {
 
         opacity = opacity + 0.01;
     }
-    if(frameNumber >= 2250 && frameNumber < 2500){
+    if(frameNumber >= 2190 && frameNumber < 2440){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
 
         if (window.innerWidth < 600) {
@@ -166,10 +166,10 @@ function drawText() {
         opacity = opacity - 0.01;
     }
 
-    if(frameNumber == 2500){
+    if(frameNumber == 2440){
         opacity = 0;
     }
-    if(frameNumber > 2500 && frameNumber < 99999){
+    if(frameNumber > 2440 && frameNumber < 99999){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
 
         if (window.innerWidth < 600) {
@@ -181,7 +181,7 @@ function drawText() {
         opacity = opacity + 0.01;
     }
     
-    if(frameNumber >= 2750 && frameNumber < 99999){
+    if(frameNumber >= 2690 && frameNumber < 99999){
         context.fillStyle = `rgba(45, 45, 255, ${secondOpacity})`;
 
 
@@ -194,7 +194,7 @@ function drawText() {
         secondOpacity = secondOpacity + 0.01;
     }
 
-    if(frameNumber >= 3000 && frameNumber < 99999){
+    if(frameNumber >= 2940 && frameNumber < 99999){
         context.fillStyle = `rgba(45, 45, 255, ${thirdOpacity})`;
         context.fillText("Happy Valentine's Day Divu <3", canvas.width/2, (canvas.height/2 + 120));
         thirdOpacity = thirdOpacity + 0.01;
